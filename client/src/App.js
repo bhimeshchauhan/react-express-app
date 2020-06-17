@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ClassComponent from './classComponent';
+import FunctionalComponent from './functionalComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>CLASS</h1>
+      <ClassComponent myProp="This is passed as a prop." />
+      <h1>FUNCTIONAL</h1>
+      <FunctionalComponent myProp="This is passed as a prop." />
     </div>
   );
 }
